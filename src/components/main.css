@@ -1,0 +1,8 @@
+#root {
+  min-block-size: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  background-color: var(--neutral-grey-100);
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
