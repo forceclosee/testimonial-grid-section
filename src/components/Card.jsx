@@ -9,11 +9,12 @@ export default function Card({
   highlight,
   content,
   elementClass,
+  imageModifier,
 }) {
   return (
     <section className={`${elementClass} card`}>
       <img
-        className="card__image"
+        className={`card__image ${imageModifier}`}
         src={image}
         alt={title}
         width={56}
@@ -24,7 +25,7 @@ export default function Card({
         <span className="card__status">{status}</span>
       </div>
       <div className="card__content-wrapper">
-        <p className="card__content card__content--highlight">{highlight}</p>
+        <p className="card__content-highlight">{highlight}</p>
         <p className="card__content">{content}</p>
       </div>
     </section>

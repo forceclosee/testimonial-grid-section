@@ -12,6 +12,7 @@ export default function App() {
           {testimonialData.map((data) => (
             <Card
               key={data.id}
+              imageModifier={data.imageModifier}
               image={data.image}
               title={data.title}
               status={data.status}
@@ -22,7 +23,7 @@ export default function App() {
           ))}
         </div>
       </main>
-      <Footer></Footer>
+      <Footer />
     </>
   );
 }

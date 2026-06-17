@@ -1,0 +1,19 @@
+.testimonial__wrapper {
+  display: grid;
+  gap: 2rem;
+}
+
+.testimonial__card--daniel {
+  background-color: var(--primary-purple-500);
+  color: var(--neutral-grey-100);
+}
+
+.testimonial__card--jonathan {
+  background-color: var(--neutral-grey-500);
+  color: var(--neutral-white);
+}
+
+.testimonial__card--patrick {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-grey-100);
+}

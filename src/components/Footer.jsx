@@ -8,7 +8,14 @@ export default function Footer() {
         <a href="https://www.frontendmentor.io?ref=challenge">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        . Coded by{" "}
+        <a
+          href="https://github.com/forceclosee"
+          target="blank"
+          rel="noopener noreferrer">
+          Force Close
+        </a>
+        .
       </p>
     </footer>
   );

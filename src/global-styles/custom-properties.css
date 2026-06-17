@@ -10,4 +10,11 @@
   --neutral-grey-500: hsl(217, 19%, 35%);
   --neutral-dark-blue: hsl(219, 29%, 14%);
   --neutral-black: hsl(0, 0%, 7%);
+
+  --shadow-color: 0deg 0% 0%;
+  --shadow-elevation-high:
+    1.1px 2.2px 2px -1.3px hsl(var(--shadow-color) / 0.15),
+    9.8px 19.6px 17.4px -3.4px hsl(var(--shadow-color) / 0.08),
+    16.4px 32.9px 29.2px -4px hsl(var(--shadow-color) / 0.06),
+    25.8px 51.5px 45.8px -4.7px hsl(var(--shadow-color) / 0.04);
 }
