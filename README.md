@@ -1,4 +1,4 @@
-# Frontend Mentor - Testimonials grid section solution
+# Responsive Testimonial Grid Section built with React, CSS Grid & BEM Methodology
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com) <!-- ganti link -->
-- Live Site URL: [live site URL](https://your-live-site-url.com) <!-- ganti link -->
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/testimonial-grid-section-built-with-react-css-grid-and-bem-methodology-a2LKMZ1zoC)
+- Live Site URL: [live site URL](https://testimonial-grid-section-forceclose.vercel.app/)
 
 ## My process
 
@@ -51,20 +51,24 @@ In this project, I learned how to handle lists dynamically and implement conditi
 - **List Rendering (`map()` method)**: I learned how to render an array of data dynamically into components using the `.map()` method. I also learned the importance of providing a unique `key` prop to help React track and optimize list rendering:
 
 ```jsx
-{
-  testimonialData.map((data) => (
-    <Card
-      key={data.id}
-      image={data.image}
-      title={data.title}
-      status={data.status}
-      highlight={data.highlight}
-      content={data.content}
-      elementClass={data.elementClass}
-      imageModifier={data.imageModifier}
-    />
-  ));
-}
+return (
+  <main className="testimonial">
+    <div className="testimonial__wrapper">
+      {testimonialData.map((data) => (
+        <Card
+          key={data.id}
+          image={data.image}
+          title={data.title}
+          status={data.status}
+          highlight={data.highlight}
+          content={data.content}
+          elementClass={data.elementClass}
+          imageModifier={data.imageModifier}
+        />
+      ))}
+    </div>
+  </main>
+);
 ```
 
 - **Inline Conditional Rendering (`&&`)**: Using the logical AND (`&&`) operator inside JSX is a clean and declarative way to render elements conditionally without needing to declare extra temporary variables:
