@@ -1,4 +1,4 @@
-#root {
+.root {
   min-block-size: 100svh;
   display: grid;
   grid-template-rows: 1fr auto;

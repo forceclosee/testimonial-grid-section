@@ -8,6 +8,7 @@ export default function App() {
   return (
     <>
       <main className="testimonial">
+        <h1 className="testimonial__title">Testimonial grid section</h1>
         <div className="testimonial__wrapper">
           {testimonialData.map((data) => (
             <Card
