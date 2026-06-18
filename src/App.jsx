@@ -1,6 +1,6 @@
-import Card from "./Card.jsx";
-import Footer from "./Footer.jsx";
-import { testimonialData } from "../utils/testimonial-data.js";
+import Card from "./components/Card.jsx";
+import Footer from "./components/Footer.jsx";
+import { testimonialData } from "./data/testimonial-data.js";
 
 import "./App.css";
 

@@ -5,7 +5,10 @@ export default function Footer() {
     <footer className="attribution">
       <p>
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge">
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="blank"
+          rel="noopener noreferrer">
           Frontend Mentor
         </a>
         . Coded by{" "}

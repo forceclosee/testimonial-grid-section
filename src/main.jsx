@@ -7,7 +7,7 @@ import "@fontsource/barlow-semi-condensed/400.css";
 import "@fontsource/barlow-semi-condensed/500.css";
 import "@fontsource/barlow-semi-condensed/600.css";
 
-import "../global-styles/global.css";
+import "./global-styles/global.css";
 
 import "./main.css";
 

@@ -1,0 +1,65 @@
+.testimonial__wrapper {
+  display: grid;
+  gap: 2rem;
+  max-inline-size: 28rem;
+
+  @media (width >= 42rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "daniel daniel"
+      "jonathan kira"
+      "jeanette kira"
+      "patrick patrick";
+    max-inline-size: 44rem;
+  }
+
+  @media (width >= 74rem) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "daniel daniel jonathan kira"
+      "jeanette patrick patrick kira";
+    max-inline-size: 80rem;
+  }
+}
+
+.testimonial__card--daniel {
+  position: relative;
+  background-color: var(--primary-purple-500);
+  color: var(--neutral-grey-100);
+
+  @media (width >= 42rem) {
+    grid-area: daniel;
+  }
+}
+
+.testimonial__card--jonathan {
+  background-color: var(--neutral-grey-500);
+  color: var(--neutral-white);
+
+  @media (width >= 42rem) {
+    grid-area: jonathan;
+  }
+}
+
+.testimonial__card--jeanette {
+  @media (width >= 42rem) {
+    grid-area: jeanette;
+  }
+}
+
+.testimonial__card--patrick {
+  background-color: var(--neutral-dark-blue);
+  color: var(--neutral-grey-100);
+
+  @media (width >= 42rem) {
+    grid-area: patrick;
+  }
+}
+
+.testimonial__card--kira {
+  @media (width >= 42rem) {
+    grid-area: kira;
+  }
+}

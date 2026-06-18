@@ -1,6 +1,7 @@
 .card {
   display: grid;
   grid-template-columns: auto 1fr;
+  align-content: center;
   align-items: center;
   gap: 1rem;
   max-inline-size: 100%;
@@ -23,6 +24,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+  z-index: 1;
   block-size: 100%;
 }
 
@@ -40,6 +42,7 @@
 
 .card__content-wrapper {
   grid-column: span 2;
+  z-index: 1;
 
   > * + * {
     margin-block-start: 1em;
@@ -56,6 +59,18 @@
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.5rem;
+}
+
+.card__bg-quotations {
+  position: absolute;
+  display: none;
+  block-size: 6.5rem;
+  inset-block-start: 0;
+  inset-inline-end: 3.75rem;
+
+  @media (width >= 42rem) {
+    display: block;
+  }
 }
 
 .card__image--daniel {

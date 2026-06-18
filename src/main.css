@@ -2,8 +2,10 @@
   min-block-size: 100svh;
   display: grid;
   grid-template-rows: 1fr auto;
-  background-color: var(--neutral-grey-100);
+  justify-items: center;
+  align-items: center;
   gap: 4.5rem;
+  background-color: var(--neutral-grey-100);
   padding-inline: 2.1rem;
   padding-block-start: 4.5rem;
   padding-block-end: 0.5rem;
