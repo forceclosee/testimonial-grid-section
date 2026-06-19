@@ -5,24 +5,25 @@ import { testimonialData } from "./data/testimonial-data.js";
 import "./App.css";
 
 export default function App() {
+  const testimonials = testimonialData.map((data) => (
+    <Card
+      key={data.id}
+      imageModifier={data.imageModifier}
+      image={data.image}
+      title={data.title}
+      status={data.status}
+      highlight={data.highlight}
+      content={data.content}
+      elementClass={data.elementClass}
+      hasBgPattern={data.hasBgPattern}
+    />
+  ));
+
   return (
     <>
       <main className="testimonial">
         <h1 className="testimonial__title">Testimonial grid section</h1>
-        <div className="testimonial__wrapper">
-          {testimonialData.map((data) => (
-            <Card
-              key={data.id}
-              imageModifier={data.imageModifier}
-              image={data.image}
-              title={data.title}
-              status={data.status}
-              highlight={data.highlight}
-              content={data.content}
-              elementClass={data.elementClass}
-            />
-          ))}
-        </div>
+        <div className="testimonial__wrapper">{testimonials}</div>
       </main>
       <Footer />
     </>

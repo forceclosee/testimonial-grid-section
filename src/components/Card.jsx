@@ -10,6 +10,7 @@ export default function Card({
   content,
   elementClass,
   imageModifier,
+  hasBgPattern,
 }) {
   return (
     <section className={`${elementClass} card`}>
@@ -28,7 +29,7 @@ export default function Card({
         <p className="card__content-highlight">{highlight}</p>
         <p className="card__content">{content}</p>
       </div>
-      {title === "Daniel Clifford" && (
+      {hasBgPattern && (
         <img
           className="card__bg-quotations"
           src={bgPatternQuotations}
